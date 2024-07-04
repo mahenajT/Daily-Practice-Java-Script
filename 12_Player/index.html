@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Player</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="player">
+        <nav>
+          <div class="circle">
+            <i class="bi bi-chevron-left"></i>
+          </div>
+          <div class="circle">
+            <i class="bi bi-list"></i>
+          </div>
+        </nav>
+        <img src="assets/thumbnail.png" class="image" />
+        <h1>Surah</h1>
+        <p>-Quran</p>
+
+        <audio id="surah">
+          <!--controls-->
+          <source src="assets/Sura Al-Asr.mp4" type="audio/mp4" />
+        </audio>
+        <input type="range" value="0" id="progress" />
+
+        <div class="controls">
+          <div><i class="bi bi-skip-backward-fill"></i></div>
+          <div
+            class="bi bi-play-fill"
+            onclick="playPause()"
+            id="controlIcon"
+          ></div>
+          <div><i class="bi bi-fast-forward-fill"></i></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
