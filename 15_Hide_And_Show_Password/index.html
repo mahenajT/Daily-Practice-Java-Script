@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password toggle</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="input-box">
+      <input type="password" placeholder="Password" id="password" />
+      <img src="images/eye-close.png" id="visibility" />
+    </div>
+
+    <!-- JavaScript Functionality -->
+    <script>
+      let visibility = document.getElementById("visibility");
+      let password = document.getElementById("password");
+
+      visibility.onclick = function () {
+        if (password.type == "password") {
+          password.type = "text";
+          visibility.src = "images/eye-open.png";
+        } else {
+          password.type = "password";
+          visibility.src = "images/eye-close.png";
+        }
+      };
+    </script>
+  </body>
+</html>
