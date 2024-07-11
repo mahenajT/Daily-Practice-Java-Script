@@ -39,8 +39,9 @@ body {
   padding: 10px;
   margin: 10px 0;
   transition: all 0.3s;
+  cursor: pointer;
 }
-.btn:hover:no([disabled]) {
+.btn:hover:not([disabled]) {
   background: #222;
   color: #fff;
 }

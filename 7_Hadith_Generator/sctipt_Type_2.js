@@ -50,6 +50,10 @@ const quotes = [
     quote: "Seeking knowledge is an obligation upon every Muslim.",
     writer: "Sunan Ibn Majah",
   },
+  {
+    quote: "Today is the tomorrow we worried about yesterday.",
+    writer: "unknown",
+  },
 ];
 
 let btn = document.querySelector("#getQuote");

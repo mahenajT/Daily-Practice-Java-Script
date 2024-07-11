@@ -106,13 +106,13 @@ function selectAnswer(e) {
   const isCorrect = selectButton.dataset.correct === "true";
   if (isCorrect) {
     selectButton.classList.add("correct");
+    score++; // Increment the score only if the selected answer is correct
   } else {
     selectButton.classList.add("incorrect");
   }
   Array.from(answerButtons.children).forEach((button) => {
     if (button.dataset.correct === "true") {
       button.classList.add("correct");
-      score++;
     }
     button.disabled = true;
   });
